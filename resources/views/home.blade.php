@@ -64,7 +64,17 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <h1>Hello World</h1>
+        <br>
+        <div class="content">
+        <h1>Ciao {{$nome}} {{$cognome}}</h1>
+        <p>
+            @foreach ($ordini as $ordine)
+                {{$ordine}}
+            @endforeach
+        </p>
+        </div>
+        <!--<div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -95,6 +105,6 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
-        </div>
+        </div>-->
     </body>
 </html>
